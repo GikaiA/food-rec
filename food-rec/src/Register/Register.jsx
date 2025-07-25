@@ -1,5 +1,6 @@
 import React from "react";
 import "./Register.css";
+import GoogleSignIn from "../GoogleSignIn";
 
 function Register() {
   return (
@@ -9,9 +10,8 @@ function Register() {
           <h1>Register</h1>
         </div>
         <div className="google">
-          <p>SIGN IN WITH GOOGLE PLACEHOLDER</p>
+          <GoogleSignIn />
         </div>
-        
         <div className="first-last-section">
           <label>First Name</label>
           <input type="text" className="first" placeholder="First Name"></input>

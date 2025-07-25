@@ -2,6 +2,7 @@ import React from 'react'
 import { signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth, googleProvider } from '../firebase';
+import GoogleButton from 'react-google-button';
 
 const GoogleSignIn = () => {
   const navigate = useNavigate();
@@ -21,9 +22,9 @@ const GoogleSignIn = () => {
   };
 
   return (
-    <button onClick={handleGoogleSignIn}>
+    <GoogleButton onClick={handleGoogleSignIn}>
       Sign in with Google
-    </button>
+    </GoogleButton>
   );
 };
 export default GoogleSignIn
