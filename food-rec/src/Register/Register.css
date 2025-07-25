@@ -1,0 +1,14 @@
+.register{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-form{
+    display: block;
+}
+
+.first-last-section{
+    margin: 10px 10px;
+}
