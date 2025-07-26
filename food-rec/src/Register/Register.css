@@ -1,14 +1,44 @@
-.register{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.register {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-.register-form{
-    display: block;
+.register-form {
+  display: block;
 }
 
-.first-last-section{
-    margin: 10px 10px;
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  padding: 0 15px;
+  color: #666;
+  font-size: 14px;
+}
+.first-last-section {
+  margin: 10px 10px;
+}
+
+.register-link {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+.register-link a {
+  color: #4a90e2;
+  text-decoration: none;
 }
