@@ -3,7 +3,8 @@ import './Profile.css';
 
 function Profile() {
   return (
-    <div>
+    <div className='profile'>
+      <h1>Welcome User!</h1>
       
     </div>
   )

@@ -4,6 +4,8 @@ import GoogleSignIn from "../GoogleSignIn";
 import {Link} from 'react-router-dom';
 
 function Register() {
+
+  
   return (
     <div className="register">
       <form className="register-form">

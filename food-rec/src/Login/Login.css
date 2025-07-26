@@ -1,3 +1,31 @@
+.login {
+  text-align: center;
+}
+
+.login-form {
+  display: block;
+  margin: 10px 10px;
+}
+
+.input-field-section {
+  margin: 10px 10px;
+}
+
+label {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.input-field {
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  background-color: lightgray;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
 .divider {
   display: flex;
   align-items: center;
@@ -21,7 +49,7 @@
 .login-button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #a80b00;
+  background-color: #333333;
   color: white;
   border: none;
   border-radius: 4px;
