@@ -1,0 +1,46 @@
+.navbar {
+    background-color: lightgray; 
+    color: #036100;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    color: #036100;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+
+  .navbar-title{
+    color: #036100;
+  }
+
+
+  .logout-button{
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #036100;
+  }

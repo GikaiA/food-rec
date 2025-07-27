@@ -6,17 +6,18 @@ import Login from "./Login/Login";
 import Footer from "./Footer/Footer";
 import Profile from "./Profile/Profile";
 import Recipe from "./Recipe/Recipe";
+import Questions from "./Questions/Questions";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Footer/>
+        <Footer />
         <Routes>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/recipes" element={<Recipe />} />
+          <Route path="/questions" element={<Questions />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
