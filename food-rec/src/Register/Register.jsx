@@ -3,7 +3,10 @@ import "./Register.css";
 import GoogleSignIn from "../GoogleSignIn";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -29,10 +32,13 @@ const Register = () => {
         email,
         password
       );
+
+      await sendEmailVerification(userCredential.user);
+
       console.log("Registered user:", userCredential.user);
       console.log("First Name:", firstName);
       console.log("Last Name:", lastName);
-      
+
       setSuccess("Registration successful! You can now log in.");
       setError(""); // Clear any previous errors
       setFirstName("");
@@ -62,18 +68,18 @@ const Register = () => {
         </div>
         <div className="first-last-section">
           <label>First Name</label>
-          <input 
-            type="text" 
-            className="first" 
+          <input
+            type="text"
+            className="first"
             placeholder="First Name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
           <label>Last Name</label>
-          <input 
-            type="text" 
-            className="last" 
+          <input
+            type="text"
+            className="last"
             placeholder="Last Name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
@@ -121,4 +127,4 @@ const Register = () => {
   );
 };
 
-export default Register
+export default Register;

@@ -32,19 +32,19 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-title">
-          <h1 className="navbar-title">The Stock Market</h1>
+          <h1 className="navbar-title">FoodRec</h1>
         </Link>
         <div className="navbar-links">
           {isLoggedIn ? (
             <>
-              <Link to="/dashboard" className="navbar-link">
-                Dashboard
+              <Link to="/questions" className="navbar-link">
+               What You Craving
               </Link>
               <Link to="/search" className="navbar-link">
-                Search
+                Suprise Me
               </Link>
-              <Link to="/news" className="navbar-link">
-                News
+              <Link to="/profile" className="navbar-link">
+                Profile
               </Link>
               <button onClick={handleLogout} className="logout-button">
                 Logout
