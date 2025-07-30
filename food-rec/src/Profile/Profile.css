@@ -1,0 +1,17 @@
+.profile{
+    display: block;
+    text-align: center;
+}
+
+.profile-section{
+display: block;
+}
+
+.information-section{
+    display: block;
+}
+
+
+.saved-info-section{
+    display: flex;
+}
