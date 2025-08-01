@@ -34,6 +34,8 @@ const Register = () => {
       );
 
       await sendEmailVerification(userCredential.user);
+      // Don't navigate to dashboard yet - wait for verification
+    // navigate("/email-verification");
 
       console.log("Registered user:", userCredential.user);
       console.log("First Name:", firstName);

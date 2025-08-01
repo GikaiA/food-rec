@@ -1,17 +1,31 @@
-.profile{
-    display: block;
-    text-align: center;
+.profile {
+  display: block;
+  text-align: center;
 }
 
-.profile-section{
-display: block;
+.profile-section {
+  display: block;
 }
 
-.information-section{
-    display: block;
+.information-section {
+  display: block;
 }
 
+.update-button{
+    margin-bottom: 10px;
+}
+.saved-info-section {
+  display: flex;
+  justify-content: center;
+}
 
-.saved-info-section{
-    display: flex;
+.sub-info {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+  float: left;
+  padding: 25px;
+  background-color: darkgray;
+  color: white;
 }

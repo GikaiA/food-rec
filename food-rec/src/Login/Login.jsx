@@ -16,6 +16,17 @@ const Login = () => {
     try {
       // Sign in user with email and password
       await signInWithEmailAndPassword(auth, email, password);
+
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
+      if (!userCredential.user.emailVerified) {
+        setError("Please verify your email before logging in.");
+        return;
+      }
       console.log("User logged in successfully");
       setError("");
       navigate("/dashboard"); // Redirect to a protected page

@@ -10,13 +10,16 @@ function Profile() {
         <div className='information-section'>
           <p>Email: placeholder</p>
           <p>Password: placeholder</p>
+          <button className='update-button'>
+            Update Profile
+          </button>
           <div className='saved-info-section'>
             <div className='sub-info'>
               <h2>Saved Recipes</h2>
               <p>Placeholder</p>
             </div>
             <div className='sub-info'>
-              <h2>Saved Recipes</h2>
+              <h2>Saved Restaurants</h2>
               <p>Placeholder</p>
             </div>
           </div>
