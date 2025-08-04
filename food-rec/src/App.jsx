@@ -5,7 +5,7 @@ import Register from "./Register/Register";
 import Login from "./Login/Login";
 import Footer from "./Footer/Footer";
 import Profile from "./Profile/Profile";
-import Recipe from "./Recipe/Recipe";
+import Results from "./Results/Results";
 import Questions from "./Questions/Questions";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/questions" element={<Questions />} />
+          <Route path="/results" element={<Results/>}/>
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>

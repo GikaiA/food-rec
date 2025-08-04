@@ -4,6 +4,7 @@ import "./Questions.css";
 function Questions() {
   return (
     <div className="questions">
+      <div className="questions-container">
         <p>What you feeling today</p>
       <select name="dropdown" className="dropdown">
         {" "}
@@ -32,6 +33,10 @@ function Questions() {
         <option value="value1">label 1</option>{" "}
         <option value="value2">label 2</option>{" "}
       </select>
+      <div className="question-submit-button">
+        <button>Submit Answers</button>
+      </div>
+      </div>
     </div>
   );
 }

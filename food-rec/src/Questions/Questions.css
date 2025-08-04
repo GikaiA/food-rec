@@ -1,4 +1,13 @@
-.dropdown{
-    width: 500px;
-    max-width: 100%;
+.dropdown {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.questions-container {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
 }

@@ -1,3 +1,15 @@
 #root {
   margin: 0 auto;
+  --background-beige: #f5f4f0; /* Warm beige */
+  --primary-red: #e60023; /* DoorDash-style red */
+  --accent-red: #ff3040; /* Slightly brighter for hovers */
+  --text-primary: #ffffff; /* White text */
+  --text-secondary: #000000; /* Black text for contrast */
+  --card-background: #ffffff; /* White cards on beige */
+}
+
+body {
+  background-color: var(--background-beige);
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
 }
