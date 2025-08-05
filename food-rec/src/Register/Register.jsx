@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Register.css";
-import GoogleSignIn from "../GoogleSignIn";
+import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import {

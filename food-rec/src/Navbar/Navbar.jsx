@@ -53,7 +53,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/register" className="navbar-link">
-                Register
+                Sign Up
               </Link>
               <Link to="/login" className="navbar-link">
                 Login

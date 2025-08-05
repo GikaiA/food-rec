@@ -1,0 +1,16 @@
+.google-button-section{
+    display: flex;
+    justify-content: center;
+}
+
+
+.google-button{
+    display: flex;
+    text-align: center;
+}
+
+
+.google-logo{
+    font-size: 15px;
+    padding-left: 10px;
+}

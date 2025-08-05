@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
-import GoogleSignIn from "../GoogleSignIn";
+import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
