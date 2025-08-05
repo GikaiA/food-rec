@@ -30,11 +30,11 @@ const GoogleSignIn = () => {
       >
         Sign in with Google
       </GoogleButton> */}
-      <button className="google-button">
+      <button className="google-button" onClick={handleGoogleSignIn}>
         <div className="google-logo">
           <FaGoogle />
         </div>
-        Sign In With Google
+        <p className="google-sentence">Sign In With Google</p>
       </button>
     </div>
   );
