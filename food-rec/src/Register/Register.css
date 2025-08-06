@@ -22,6 +22,20 @@ label {
   background-color: lightgray;
   border-color: transparent;
   border-radius: 5px;
+  margin: 10px 10px;
+}
+
+.register-label{
+  padding-left: 10px;
+}
+
+.register-field{
+  font-size: 18px;
+  width: 250px;
+  max-width: 100%;
+  background-color: lightgray;
+  border-color: transparent;
+  border-radius: 5px;
 }
 
 .divider {
@@ -44,6 +58,7 @@ label {
   font-size: 14px;
 }
 .first-last-section {
+  display: flex;
   margin: 10px 10px;
 }
 
@@ -56,4 +71,14 @@ label {
 .register-link a {
   color: #4a90e2;
   text-decoration: none;
+}
+
+
+.submit-button{
+  background-color: lightgray;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 8px;
+  padding: 10px 10px;
+  cursor: pointer;
 }

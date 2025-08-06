@@ -35,7 +35,7 @@ const Register = () => {
 
       await sendEmailVerification(userCredential.user);
       // Don't navigate to dashboard yet - wait for verification
-    // navigate("/email-verification");
+      // navigate("/email-verification");
 
       console.log("Registered user:", userCredential.user);
       console.log("First Name:", firstName);
@@ -48,7 +48,7 @@ const Register = () => {
       setEmail("");
       setPassword("");
       setConfirmPassword("");
-      navigate("/dashboard");
+      navigate("/profile");
     } catch (err) {
       console.error("Registration error:", err.message);
       setError(err.message);
@@ -69,19 +69,19 @@ const Register = () => {
           <span>OR</span>
         </div>
         <div className="first-last-section">
-          <label>First Name</label>
+          <label className="register-label">First Name</label>
           <input
             type="text"
-            className="first"
+            className="register-field"
             placeholder="First Name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
-          <label>Last Name</label>
+          <label className="register-label">Last Name</label>
           <input
             type="text"
-            className="last"
+            className="register-field"
             placeholder="Last Name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
@@ -100,7 +100,7 @@ const Register = () => {
           required
         />
         <br />
-        <label>Password</label>
+        <label className="register-label">Password</label>
         <input
           type="password"
           placeholder="Password"
