@@ -11,8 +11,21 @@
   display: block;
 }
 
+.buttons{
+  display: inline-grid;
+  margin-bottom: 10px;
+
+}
 .update-button{
     margin-bottom: 10px;
+}
+
+.delete-button{
+  font-size: 16px;
+  border: transparent;
+  border-radius: 8px;
+  background-color: var(--primary-red);
+  color: white;
 }
 .saved-info-section {
   display: flex;
