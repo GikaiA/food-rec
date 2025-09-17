@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import food from '../images/food.jpg'
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -38,7 +39,13 @@ const Login = () => {
 
   return (
     <div className="login">
-      <form className="login-form" onSubmit={handleLogin}>
+      <div className="split left">
+        <div className="bg"></div>
+        <img src={food} className="bg-photo"></img>
+      </div>
+      < div className="split right">
+      <div className="centered">
+         <form className="login-form" onSubmit={handleLogin}>
         {error && <p className="error-message">{error}</p>}
         <h1>Sign In</h1>
         <GoogleSignIn />
@@ -46,7 +53,7 @@ const Login = () => {
           <span>OR</span>
         </div>
         <div className="input-field-section">
-          <label>Email</label>
+          <label className="login-label">Email</label>
           <input
             type="text"
             className="input-field"
@@ -55,9 +62,7 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </div>
-        <div className="input-field-section">
-          <label>Password</label>
+          <label className="login-label">Password</label>
           <input
             type="text"
             className="input-field"
@@ -77,6 +82,45 @@ const Login = () => {
           </Link>
         </p>
       </form>
+      </div>
+      </div>
+      {/* <form className="login-form" onSubmit={handleLogin}>
+        {error && <p className="error-message">{error}</p>}
+        <h1>Sign In</h1>
+        <GoogleSignIn />
+        <div className="divider">
+          <span>OR</span>
+        </div>
+        <div className="input-field-section">
+          <label className="login-label">Email</label>
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <label className="login-label">Password</label>
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Enter your pasword"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" className="login-button">
+          Login
+        </button>
+        <p className="signup-link">
+          Don't have an account?{" "}
+          <Link to="/register" className="link">
+            Sign up
+          </Link>
+        </p>
+      </form> */}
     </div>
   );
 };
