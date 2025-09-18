@@ -11,3 +11,28 @@
   top: 30%;
   width: 100%;
 }
+
+.checkbox-section{
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox{
+width: 20px;
+height: auto;
+margin: 0;
+}
+
+.question{
+  font-weight: none;
+}
+.checkbox-label{
+  font-size: 25px;
+}
+.arrow-buttons{
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 30px;
+  width: 600px;
+}
