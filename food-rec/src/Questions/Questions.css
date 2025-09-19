@@ -12,27 +12,47 @@
   width: 100%;
 }
 
-.checkbox-section{
+.checkbox-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.checkbox{
-width: 20px;
-height: auto;
-margin: 0;
+.checkbox {
+  width: 20px;
+  height: auto;
+  margin: 0;
 }
 
-.question{
-  font-weight: none;
+input {
+  background-color: black;
 }
-.checkbox-label{
+.option {
   font-size: 25px;
 }
-.arrow-buttons{
+.arrow-buttons {
   display: flex;
   margin-left: auto;
   margin-right: 0;
   padding-top: 30px;
   width: 600px;
+}
+
+.arrow-button {
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border-color: transparent;
+}
+.home-address-field {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  font-size: 22px;
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: lightgray;
+  color: black;
+  border-color: transparent;
 }

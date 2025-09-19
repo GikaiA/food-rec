@@ -1,13 +1,12 @@
-import React from 'react';
-import './Results.css';
-// import {GoogleGenAI} from '@google/genai';
+import React from 'react'
 
-// const ai = new GoogleGenAI({apiKey: "AIzaSyBwOmT3IsfrUoXhbBImMh1edL-9gDWMLvo"})
-
- async function Results() {
- <div>
-    <p>should be the results popping up here</p>
- </div>
+function Results() {
+  return (
+    <div>
+      <h1>Restaurants</h1>
+     <p>this is the results page</p> 
+    </div>
+  )
 }
 
 export default Results
