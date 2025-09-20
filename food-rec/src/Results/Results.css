@@ -1,0 +1,30 @@
+.results {
+  display: block;
+  width: 100%;
+}
+
+.results-title{
+    display: flex;
+    justify-content: center;
+}
+
+.results-section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: block;
+}
+
+h2 {
+  margin: 0;
+}
+.individual-result {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  background-color: lightgray;
+  padding: 15px 15px 15px 15px;
+}

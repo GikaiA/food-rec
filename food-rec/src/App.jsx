@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer";
 import Profile from "./Profile/Profile";
 import Results from "./Results/Results";
 import Questions from "./Questions/Questions";
+import Landing from "./Landing/Landing";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Footer />
         <Routes>
+          <Route path="/" element={<Landing/>}/>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/questions" element={<Questions />} />
