@@ -1,6 +1,81 @@
-.landing{
-    width: 100%;
-    height: 100%;
+.landing {
+  width: 100%;
+  height: 100%;
 }
 
+.parallax {
+  background-image: url("../images/hero-bg.jpg");
+  min-height: 800px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.parallax-bg {
+  background-color: black;
+}
+/* .hero-bg {
+  width: 2600px;
+  max-width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+} */
+
+.hero-section {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-title {
+  color: red;
+}
+
+.about-title {
+  display: block;
+  text-align: center;
+}
+
+.step-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 35px;
+}
+
+.icon {
+  width: auto;
+  height: 50px;
+}
+
+.explanation {
+  text-align: center; /* centers the text inside */
+  font-size: 21px;
+  margin: 0 auto; /* centers the block itself */
+  max-width: 250px;
+}
