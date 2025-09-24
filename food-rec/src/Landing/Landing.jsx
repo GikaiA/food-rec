@@ -46,6 +46,31 @@ function Landing() {
           </div>
         </div>
       </div>
+      <div className="values">
+        <h1 className="values-title">Values & Benefits</h1>
+        <div className="card-section">
+          <div className="card">
+            <p>Card info</p>
+            <p>Card info</p>
+          </div>
+          <div className="card">
+            <p>Card info</p>
+            <p>Card info</p>
+          </div>
+          <div className="card">
+            <p>Card info</p>
+            <p>Card info</p>
+          </div>
+          <div className="card">
+            <p>Card info</p>
+            <p>Card info</p>
+          </div>
+          <div className="card">
+            <p>Card info</p>
+            <p>Card info</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

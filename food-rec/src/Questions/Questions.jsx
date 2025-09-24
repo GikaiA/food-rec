@@ -114,47 +114,6 @@ const Questions = () => {
             Next
           </button>
         </div>
-        {/* <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Lunch</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Dinner</label>
-        </div> */}
-
-        {/* second question */}
-        {/* <div className="questions-container">
-        <h1>Are there any dietary restrictions or allergies </h1>
-        <div className="checkbox-section">
-          <input type="checkbox" id="second" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">No restrictions</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Vegetarian</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Vegan</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Gluten-free</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Dairy-free</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Nut allergy</label>
-        </div>
-        <div className="checkbox-section">
-          <input type="checkbox" id="breakfast" name="Breakfast" className="checkbox" />
-          <label className="checkbox-label">Shellfish allergy</label>
-        </div>
-      </div> */}
       </div>
     </div>
   );

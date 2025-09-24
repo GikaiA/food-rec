@@ -76,7 +76,7 @@ const Login = () => {
           Login
         </button>
         <p className="signup-link">
-          Don't have an account?{" "}
+          Don't have an account?  {" "}
           <Link to="/register" className="link">
             Sign up
           </Link>

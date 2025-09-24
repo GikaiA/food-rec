@@ -14,7 +14,6 @@
 
 .left {
   left: 0;
-  background-color: var(--background-beige);
 }
 .bg-photo{
   width: 100%;
@@ -26,7 +25,7 @@
 
 .right {
   right: 0;
-  background-color: beige;
+  background-color: var(--background-beige);
 } 
 
 .login-form {
