@@ -90,34 +90,41 @@ const Register = () => {
         </div>
         {error && <p className="error-message">{error}</p>}
         {success && <p className="success-message">{success}</p>}
-        <label>Email</label>
-        <input
-          type="email"
-          placeholder="Email address"
-          className="input-field"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+        <div className="input-field-section">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Email address"
+            className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
         <br />
-        <label className="register-label">Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          className="input-field"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <label>Confirm Password</label>
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          className="input-field"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
+        <div className="input-field-section">
+          <label className="register-label">Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <div className="input-field-section">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            className="input-field"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+        </div>
         <div className="submit-button-section">
           <button className="submit-button">Register</button>
         </div>

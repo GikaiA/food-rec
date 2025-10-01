@@ -22,6 +22,19 @@ const Questions = () => {
     },
     {
       id: 3,
+      text: "Craving something specific? Select the foods you'd like us to look for.",
+      options: [
+        "Burgers",
+        "Pizza",
+        "Chinese",
+        "Salads",
+        "Italian",
+        "Mexican",
+        "Desserts",
+      ],
+    },
+    {
+      id: 4,
       text: "What is your address?",
       type: "input",
     },
@@ -104,7 +117,11 @@ const Questions = () => {
           )}
         </div>
         <div className="arrow-buttons">
-          <button onClick={prevQuestion} disabled={currentIndex === 0} className="arrow-button">
+          <button
+            onClick={prevQuestion}
+            disabled={currentIndex === 0}
+            className="arrow-button"
+          >
             Previous
           </button>
           <button

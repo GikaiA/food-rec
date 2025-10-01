@@ -3,13 +3,18 @@
   width: 100%;
 }
 
+.maps{
+  width: 100%;
+  height: 600px;
+}
+
 .results-title{
     display: flex;
     justify-content: center;
 }
 
 .results-section {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 

@@ -26,7 +26,7 @@ export default function Results() {
         <div className="maps">
           <div
             ref={mapContainer}
-            style={{ width: "100%", height: "500px", borderRadius: "10px" }}
+            style={{ width: "800px", height: "600px", borderRadius: "10px" }}
           ></div>
         </div>
         <div className="container">

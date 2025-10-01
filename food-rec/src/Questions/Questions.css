@@ -29,6 +29,7 @@ input {
 }
 .option {
   font-size: 25px;
+  margin-top: 18px;
 }
 .arrow-buttons {
   display: flex;

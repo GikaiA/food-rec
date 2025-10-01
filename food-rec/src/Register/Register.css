@@ -6,12 +6,19 @@
 }
 
 .register-form {
-  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 label {
   font-size: 18px;
   padding-right: 10px;
+}
+
+.input-field-section{
+  display: block;
 }
 
 .input-field {
@@ -25,11 +32,11 @@ label {
   margin: 10px 10px;
 }
 
-.register-label{
+.register-label {
   padding-left: 10px;
 }
 
-.register-field{
+.register-field {
   font-size: 18px;
   width: 250px;
   max-width: 100%;
@@ -73,8 +80,7 @@ label {
   text-decoration: none;
 }
 
-
-.submit-button{
+.submit-button {
   background-color: lightgray;
   font-size: 16px;
   border: transparent;
