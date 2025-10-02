@@ -33,22 +33,30 @@ const Register = () => {
         password
       );
 
-      await sendEmailVerification(userCredential.user);
-      // Don't navigate to dashboard yet - wait for verification
-      // navigate("/email-verification");
+      const user = userCredential.user;
 
-      console.log("Registered user:", userCredential.user);
+      // Send verification email
+      await sendEmailVerification(user);
+
+      console.log("Registered user:", user);
       console.log("First Name:", firstName);
       console.log("Last Name:", lastName);
 
-      setSuccess("Registration successful! You can now log in.");
+      // Show success message
+      setSuccess(
+        "Registration successful! Please verify your email before logging in."
+      );
       setError(""); // Clear any previous errors
+
+      // Clear form fields
       setFirstName("");
       setLastName("");
       setEmail("");
       setPassword("");
       setConfirmPassword("");
-      navigate("/profile");
+
+      // Redirect to email verification reminder page
+      navigate("/verify-email");
     } catch (err) {
       console.error("Registration error:", err.message);
       setError(err.message);
@@ -101,8 +109,6 @@ const Register = () => {
             required
           />
         </div>
-
-        <br />
         <div className="input-field-section">
           <label className="register-label">Password</label>
           <input

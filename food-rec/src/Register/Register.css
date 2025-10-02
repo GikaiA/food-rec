@@ -7,9 +7,11 @@
 
 .register-form {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgb(122, 122, 122);
+  border-radius: 10px;
 }
 
 label {
@@ -17,19 +19,20 @@ label {
   padding-right: 10px;
 }
 
-.input-field-section{
+.input-field-section {
   display: block;
+  padding-top: 15px;
 }
 
 .input-field {
   font-size: 16px;
-  width: 100%;
+  margin: auto;
+  width: 500px;
   max-width: 100%;
   padding: 5px;
   background-color: lightgray;
   border-color: transparent;
   border-radius: 5px;
-  margin: 10px 10px;
 }
 
 .register-label {

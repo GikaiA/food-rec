@@ -8,6 +8,7 @@ import Profile from "./Profile/Profile";
 import Results from "./Results/Results";
 import Questions from "./Questions/Questions";
 import Landing from "./Landing/Landing";
+import VerifyPage from "./VerifyPage/VerifyPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Landing/>}/>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/verify-email" element={<VerifyPage/>}/>
           <Route path="/questions" element={<Questions />} />
           <Route path="/results" element={<Results/>}/>
           <Route path="/profile" element={<Profile />} />

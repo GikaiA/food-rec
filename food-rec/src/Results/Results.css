@@ -27,9 +27,10 @@ h2 {
 }
 .individual-result {
   width: 100%;
+  max-width: 100%;
   display: grid;
   justify-content: center;
   gap: 15px;
   background-color: lightgray;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px;
 }
