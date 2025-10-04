@@ -1,6 +1,6 @@
-# 🚀 [Your App Name]
+# 🚀 [FoodRec]
 
-A web application built with **React** that connects users with local handymen and services.  
+A web application built with **React** that connects users with personalized food choices based on their answers.  
 The app includes **Firebase Authentication (Email + Google Sign-In)** with **email verification**, a **dashboard** for managing tasks, and **Mapbox integration** for location-based features.
 
 ---
