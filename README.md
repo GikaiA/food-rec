@@ -1,12 +1,46 @@
-# React + Vite
+# 🚀 [Your App Name]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application built with **React** that connects users with local handymen and services.  
+The app includes **Firebase Authentication (Email + Google Sign-In)** with **email verification**, a **dashboard** for managing tasks, and **Mapbox integration** for location-based features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔑 **User Authentication**
+  - Email + Password signup/login
+  - Google Sign-In with Firebase
+  - Email verification before accessing protected pages
+- 📍 **Interactive Map**
+  - Powered by [Mapbox](https://www.mapbox.com/)
+  - Displays user or service provider locations
+- 🗂 **Dashboard**
+  - Quick access to profile and settings
+  - Service browsing and saved requests
+- 🎨 **Modern UI**
+  - Built with React components
+  - Responsive design with custom CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React, React Router
+- **Auth:** Firebase Authentication
+- **Database:** Firebase Realtime Database (optional, if storing requests)
+- **Map:** Mapbox GL JS
+- **Deployment:** [Your choice: Vercel, Netlify, Firebase Hosting]
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/GikaiA/food-rec.git
+cd food-rec
+
+### 2. Install the dependencies
+'''bash
+npm install react-router-dom react-icons react-google-button mapbox-gl firebase
+
