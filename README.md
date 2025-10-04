@@ -39,8 +39,13 @@ The app includes **Firebase Authentication (Email + Google Sign-In)** with **ema
 ```bash
 git clone https://github.com/GikaiA/food-rec.git
 cd food-rec
+```
 
 ### 2. Install the dependencies
-'''bash
+```bash
 npm install react-router-dom react-icons react-google-button mapbox-gl firebase
+```
 
+###3. Run the app
+```bash
+npm run dev
