@@ -127,6 +127,7 @@ const Questions = () => {
           <button
             onClick={nextQuestion}
             disabled={currentIndex === questions.length - 1}
+            className="arrow-button"
           >
             Next
           </button>
