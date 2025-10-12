@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./Questions.css";
+import { useNavigate } from "react-router-dom"; // Import navigation
 
 const Questions = () => {
+  const navigate = useNavigate(); //  Hook for navigation
+
   const questions = [
     {
       id: 1,
-      text: "What are you feeling today?(Select all that apply)",
+      text: "What are you feeling today? (Select all that apply)",
       options: ["Breakfast", "Lunch", "Dinner"],
     },
     {
@@ -43,6 +46,7 @@ const Questions = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
 
+  //  Handle checkbox selection
   const handleCheckboxChange = (questionId, option) => {
     setAnswers((prev) => {
       const currentAnswers = prev[questionId] || [];
@@ -62,6 +66,15 @@ const Questions = () => {
     });
   };
 
+  //  Handle text input
+  const handleInputChange = (questionId, value) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [questionId]: value,
+    }));
+  };
+
+  // Go to next/previous questions
   const nextQuestion = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -74,11 +87,18 @@ const Questions = () => {
     }
   };
 
-  const handleInputChange = (questionId, value) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [questionId]: value,
-    }));
+  // Submit & Navigate to Results
+  const handleSubmit = () => {
+    const preferences = {
+      mealType: answers[1] || [],
+      dietaryRestrictions: answers[2] || [],
+      cuisine: answers[3] || [],
+      address: answers[4] || "",
+    };
+
+    console.log("Collected Preferences:", preferences);
+
+    navigate("/results", { state: { preferences } }); // pass data to results page
   };
 
   const currentQuestion = questions[currentIndex];
@@ -86,8 +106,10 @@ const Questions = () => {
   return (
     <div className="questions">
       <div className="questions-container">
-        {/* first question */}
+        {/* Question text */}
         <h1 className="question">{currentQuestion.text}</h1>
+
+        {/* Answer section */}
         <div className="checkbox-section">
           {currentQuestion.type === "input" ? (
             <input
@@ -116,21 +138,24 @@ const Questions = () => {
             ))
           )}
         </div>
+
+        {/* Navigation buttons */}
         <div className="arrow-buttons">
-          <button
-            onClick={prevQuestion}
-            disabled={currentIndex === 0}
-            className="arrow-button"
-          >
-            Previous
-          </button>
-          <button
-            onClick={nextQuestion}
-            disabled={currentIndex === questions.length - 1}
-            className="arrow-button"
-          >
-            Next
-          </button>
+          {currentIndex > 0 && (
+            <button onClick={prevQuestion} className="arrow-button">
+              Previous
+            </button>
+          )}
+
+          {currentIndex < questions.length - 1 ? (
+            <button onClick={nextQuestion} className="arrow-button">
+              Next
+            </button>
+          ) : (
+            <button onClick={handleSubmit} className="arrow-button submit">
+              See Results
+            </button>
+          )}
         </div>
       </div>
     </div>
