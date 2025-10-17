@@ -19,7 +19,8 @@
 }
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -30,8 +31,8 @@ h2 {
   max-width: 100%;
   display: block;
   text-align: center;
-  gap: 15px;
   background-color: lightgray;
   padding: 15px 15px;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
